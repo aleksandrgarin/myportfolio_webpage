@@ -115,7 +115,7 @@
         <div class="container">
           <h2>Мои интересы</h2>
           <p>
-            Здесь я собрал свои любимых фильмы, книги и музыкальные альбомы.
+            Здесь я собрал свои любимые фильмы, книги и музыкальные альбомы.
           </p>
 
           <div class="interest-category">
@@ -188,11 +188,39 @@
 
               <div class="col-12 col-md-4">
                 <article class="interest-item">
-                  <img
-                    src="assets/dracula.jpg"
-                    alt="Обложка книги"
-                    class="img-fluid"
-                  />
+                  <div class="dracula-cover">
+                    <input type="checkbox" aria-label="Показать потёки на обложке «Дракулы»" />
+                    <img
+                      src="assets/dracula.jpg"
+                      alt="Обложка книги «Дракула»"
+                      class="img-fluid"
+                    />
+                    <div class="dracula-drips" aria-hidden="true">
+                      <svg width="0" height="0" focusable="false">
+                        <filter
+                          id="dracula-goo"
+                          x="-15%"
+                          y="-50%"
+                          width="130%"
+                          height="180%"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+                          <feColorMatrix
+                            type="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                          />
+                        </filter>
+                      </svg>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
                   <h4>Дракула</h4>
                   <p>Б. Стокер</p>
                 </article>
@@ -345,6 +373,17 @@
               </div>
             </div>
           </article>
+          <details class="project-card secret-project">
+            <summary>Секретный проект</summary>
+
+            <figure>
+              <img src="assets/dog.jpg" alt="Мой пёс" loading="lazy" />
+              <figcaption>
+                <h3>Джонни</h3>
+                <p>Статус: ждёт прогулки</p>
+              </figcaption>
+            </figure>
+          </details>
         </div>
       </section>
 
@@ -378,6 +417,42 @@
           <div class="footer-info">
             <p>Александр Гарин</p>
             <small>© 2026. Все права защищены.</small>
+          </div>
+
+          <div class="footer-prank">
+            <input
+              type="radio"
+              name="footer-prank"
+              id="prank-start"
+              class="visually-hidden"
+              aria-label="Не нажимать"
+              checked
+            />
+            <input
+              type="radio"
+              name="footer-prank"
+              id="prank-warning"
+              class="visually-hidden"
+              aria-label="Зря..."
+            />
+            <input
+              type="radio"
+              name="footer-prank"
+              id="prank-skull"
+              class="visually-hidden"
+              aria-label="Череп"
+            />
+            <label for="prank-warning">Не нажимать</label>
+            <label for="prank-skull">Зря...</label>
+            <label for="prank-start">
+              <img
+                class="footer-prank-skull"
+                src="assets/skull-line-drawing-svgrepo-com.svg"
+                alt=""
+                width="20"
+                height="20"
+              />
+            </label>
           </div>
 
           <a href="#home" class="back-to-top">
