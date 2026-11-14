@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Александр Гарин</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md py-4">
+        <div class="container">
+          <a class="navbar-brand" href="#home"> Александр Гарин </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Открыть меню"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Обо мне</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#interests">Интересы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Мои проекты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="row align-items-center gy-5 gx-0 gx-md-5">
+            <div class="col-12 col-md-6">
+              <div class="hero-content">
+                <h1>Привет, я Александр!</h1>
+                <p>
+                  Студент программной инженерии. Интересуюсь разработкой и учусь
+                  создавать полезные продукты.
+                </p>
+                <a href="#about">Подробнее обо мне →</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="hero-image">
+                <img
+                  src="assets/Moody Portrait in Window Light.png"
+                  alt="Моя фотография"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <h2>Обо мне</h2>
+          <div class="about-content">
+            <p>
+              Меня зовут Александр Гарин. Я студент второго курса
+              Санкт-Петербургского Государственного Университета по направлению
+              «Программная инженерия».
+            </p>
+            <p>
+              Интересуюсь программированием и современными технологиями. В
+              будущем хочу создавать полезные продукты, которыми смогут
+              пользоваться люди.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="interests" class="interests">
+        <div class="container">
+          <h2>Мои интересы</h2>
+          <p>
+            Здесь я собрал свои любимых фильмы, книги и музыкальные альбомы.
+          </p>
+
+          <div class="interest-category">
+            <h3>Кино</h3>
+
+            <div class="row g-4">
+              <div class="col-12 col-md-4">
+                <article class="interest-item">
+                  <img
+                    src="assets/jagten.jpg"
+                    alt="Постер фильма"
+                    class="img-fluid"
+                  />
+                  <h4>Охота</h4>
+                  <p>2012</p>
+                </article>
+              </div>
+              <div class="col-12 col-md-4">
+                <article class="interest-item">
+                  <img
+                    src="assets/memento.jpg"
+                    alt="Постер фильма"
+                    class="img-fluid"
+                  />
+                  <h4>Мементо</h4>
+                  <p>2000</p>
+                </article>
+              </div>
+              <div class="col-12 col-md-4">
+                <article class="interest-item">
+                  <img
+                    src="assets/pulpfiction.jpg"
+                    alt="Постер фильма"
+                    class="img-fluid"
+                  />
+                  <h4>Криминальное чтиво</h4>
+                  <p>1994</p>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="interest-category">
+            <h3>Литература</h3>
+
+            <div class="row g-4">
+              <div class="col-12 col-md-4">
+                <article class="interest-item">
+                  <img
+                    src="assets/crime.jpg"
+                    alt="Обложка книги"
+                    class="img-fluid"
+                  />
+                  <h4>Преступление и наказание</h4>
+                  <p>Ф. М. Достоевский</p>
+                </article>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <article class="interest-item">
+                  <img
+                    src="assets/master.png"
+                    alt="Обложка книги"
+                    class="img-fluid"
+                  />
+                  <h4>Мастер и Маргарита</h4>
+                  <p>М. А. Булгаков</p>
+                </article>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <article class="interest-item">
+                  <img
+                    src="assets/dracula.jpg"
+                    alt="Обложка книги"
+                    class="img-fluid"
+                  />
+                  <h4>Дракула</h4>
+                  <p>Б. Стокер</p>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="interest-category">
+            <h3>Музыка</h3>
+
+            <div class="row g-4">
+              <div class="col-12 col-md-4">
+                <article class="interest-item">
+                  <img
+                    src="assets/Violator.jpg"
+                    alt="Исполнитель"
+                    class="img-fluid"
+                  />
+                  <h4>Depeche Mode</h4>
+                  <p>Violator</p>
+                </article>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <article class="interest-item">
+                  <img
+                    src="assets/Hunting_High_and_Low.jpg"
+                    alt="Исполнитель"
+                    class="img-fluid"
+                  />
+                  <h4>a-ha</h4>
+                  <p>Hunting High and Low</p>
+                </article>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <article class="interest-item">
+                  <img
+                    src="assets/No_Need_to_Argue.jpg"
+                    alt="Исполнитель"
+                    class="img-fluid"
+                  />
+                  <h4>The Cranberries</h4>
+                  <p>No Need to Argue</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2>Мои проекты</h2>
+
+          <p>Здесь представлены мои учебные и личные проекты.</p>
+
+          <article class="project-card">
+            <div class="row g-4 align-items-center">
+              <div class="col-12 col-md-6">
+                <img
+                  src="assets/site.png"
+                  alt="Скриншот приложения"
+                  class="img-fluid"
+                />
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="project-info">
+                  <h3>Этот сайт</h3>
+
+                  <p>
+                    Мой персональный сайт, созданный с использованием HTML, CSS
+                    и Bootstrap 5.
+                  </p>
+
+                  <div class="project-technologies">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Bootstrap 5</span>
+                  </div>
+
+                  <a href="https://github.com/USERNAME" target="_blank">
+                    Посмотреть на GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="row g-4 align-items-center">
+              <div class="col-12 col-md-6">
+                <img
+                  src="assets/photo-collage.png.png"
+                  alt="Скриншот приложения"
+                  class="img-fluid"
+                />
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="project-info">
+                  <h3>Meteo</h3>
+
+                  <p>Мое приложение для погоды, разработанное под Android.</p>
+
+                  <div class="project-technologies">
+                    <span>Kotlin</span>
+                    <span>Android</span>
+                  </div>
+
+                  <a
+                    href="https://sourcecraft.dev/spbu-coding-2025/weather-ag6189841-garin"
+                    target="_blank"
+                  >
+                    Посмотреть на Sourcecraft
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="row g-4 align-items-center">
+              <div class="col-12 col-md-6">
+                <img
+                  src="assets/horror.jpg"
+                  alt="Желаемый вид"
+                  class="img-fluid"
+                />
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="project-info">
+                  <h3>Будущий проект</h3>
+
+                  <p>
+                    Небольшой инди-хоррор на Unity. Работаю над ним в качестве
+                    хобби.
+                  </p>
+
+                  <div class="project-technologies">
+                    <span>Unity</span>
+                    <span>C#</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2>Мои контакты</h2>
+
+          <p>
+            Если у вас есть вопросы или предложения, вы можете связаться со
+            мной.
+          </p>
+
+          <div class="contact-links">
+            <a href="https://github.com/aleksandrgarin" target="_blank">
+              GitHub
+            </a>
+
+            <a href="https://t.me/sa5ha_1903" target="_blank"> Telegram </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <p>Александр Гарин</p>
+            <small>© 2026. Все права защищены.</small>
+          </div>
+
+          <a href="#home">Наверх ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

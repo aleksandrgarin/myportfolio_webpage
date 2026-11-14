@@ -1,0 +1,400 @@
+:root {
+  --bg-color: #f7f5f0;
+  --section-bg: #eeece6;
+  --text-color: #252525;
+  --secondary-text: #666666;
+  --muted-text: #777777;
+  --accent-color: #748477;
+  --border-color: #dbd7cf;
+
+  --footer-bg: #252525;
+  --footer-text: #f7f5f0;
+  --footer-secondary: #afafaf;
+  --footer-hover: #aabbae;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+header a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+header a:hover {
+  color: var(--accent-color);
+}
+
+header nav > a {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* ===== Hero ===== */
+
+.hero {
+  padding: 100px 0;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  color: var(--secondary-text);
+  margin-bottom: 32px;
+}
+
+.hero-content a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-content a:hover {
+  text-decoration: underline;
+}
+
+.hero-image img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ===== About ===== */
+
+.about {
+  background-color: var(--section-bg);
+  padding: 90px 0;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.about-content {
+  max-width: 750px;
+  margin-bottom: 40px;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* ===== Interests ===== */
+
+.interests {
+  padding: 90px 0;
+}
+
+.interests h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.interests > .container > p {
+  color: var(--secondary-text);
+  margin-bottom: 60px;
+}
+
+.interest-category {
+  margin-bottom: 70px;
+}
+
+.interest-category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+}
+
+.interest-item img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  transition: transform 0.3s ease;
+}
+
+.interest-item img:hover {
+  transform: scale(1.03);
+}
+
+.interest-item h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.interest-item p {
+  color: var(--muted-text);
+  font-size: 0.9rem;
+}
+
+.interest-category:last-child img {
+  aspect-ratio: 1 / 1;
+}
+
+/* ===== Projects ===== */
+
+.projects {
+  background-color: var(--section-bg);
+  padding: 90px 0;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.projects > .container > p {
+  color: var(--secondary-text);
+  margin-bottom: 50px;
+}
+
+.project-card {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.project-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-info h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.project-info p {
+  color: var(--secondary-text);
+  line-height: 1.7;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.project-technologies span {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-size: 0.85rem;
+}
+
+.project-info a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-info a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Contact ===== */
+
+.contact {
+  padding: 100px 0;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact > .container > p {
+  color: var(--secondary-text);
+  font-size: 1.1rem;
+  margin-bottom: 35px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.contact-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.contact-links a:hover {
+  color: var(--accent-color);
+}
+
+/* ===== Footer ===== */
+
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 35px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-info p {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.footer-info small {
+  color: var(--footer-secondary);
+}
+
+.footer a {
+  color: var(--footer-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: var(--footer-hover);
+}
+
+/* ===== Navbar ===== */
+
+.navbar-brand {
+  font-weight: 600;
+  color: var(--text-color);
+  white-space: nowrap;
+}
+
+.navbar .nav-link {
+  color: var(--text-color);
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--accent-color);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    padding-top: 20px;
+  }
+
+  .navbar-nav {
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .about {
+    padding: 60px 0;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .interests {
+    padding: 60px 0;
+  }
+
+  .interests h2 {
+    font-size: 2rem;
+  }
+
+  .interest-category {
+    margin-bottom: 50px;
+  }
+
+  .projects {
+    padding: 60px 0;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-info h3 {
+    font-size: 1.4rem;
+  }
+
+  .contact {
+    padding: 60px 0;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact-links {
+    gap: 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
