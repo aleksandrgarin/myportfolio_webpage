@@ -71,6 +71,9 @@ header nav > a {
 }
 
 .hero-content a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   color: var(--accent-color);
   text-decoration: none;
   font-weight: 600;
@@ -262,12 +265,22 @@ header nav > a {
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .contact-links a:hover {
   color: var(--accent-color);
 }
 
+.contact-links a img {
+  transition: opacity 0.2s ease;
+}
+
+.contact-links a:hover img {
+  opacity: 0.55;
+}
 /* ===== Footer ===== */
 
 .footer {
@@ -301,6 +314,12 @@ header nav > a {
 
 .footer a:hover {
   color: var(--footer-hover);
+}
+
+.back-to-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 /* ===== Navbar ===== */
