@@ -202,66 +202,18 @@ header nav > a {
   }
 }
 
-.dracula-drips {
+.dracula-gif {
   position: absolute;
-  inset: calc(100% - 18px) 4% auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  filter: url("#dracula-goo");
+  top: calc(100% - 15px);
+  right: 8%;
+  width: min(60%, 150px);
+  aspect-ratio: 1;
+  mix-blend-mode: multiply;
   pointer-events: none;
-  visibility: hidden;
 }
 
-.dracula-drips svg {
-  position: absolute;
-}
-
-.dracula-drips::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto;
-  height: 32px;
-  border-radius: 0 0 45% 35% / 0 0 40% 55%;
-  background: linear-gradient(#540b16, #90172b);
-}
-
-.dracula-drips span {
-  width: 13%;
-  height: 4.5rem;
-  margin-top: 9px;
-  border-radius: 35% 35% 48% 52% / 14% 14% 28px 23px;
-  background: linear-gradient(90deg, #640d1b, #991d32 42%, #710f20);
-  transform: scaleY(0);
-  transform-origin: top;
-}
-
-.dracula-drips span:nth-of-type(3n + 1) {
-  width: 8%;
-  height: 2.8rem;
-  transition-delay: 0.18s;
-}
-
-.dracula-drips span:nth-of-type(3n + 2) {
-  width: 10%;
-  height: 5.4rem;
-  transition-delay: 0.35s;
-}
-
-.dracula-cover input:checked ~ .dracula-drips {
-  visibility: visible;
-}
-
-.dracula-cover input:checked ~ .dracula-drips span {
-  transform: scaleY(1);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .dracula-cover input:checked ~ .dracula-drips span {
-    transition-property: transform;
-    transition-duration: 1.1s;
-    transition-timing-function: ease-in;
-  }
+.dracula-cover input:checked ~ .dracula-gif {
+  background: url("assets/blood-dripping.gif") center / contain no-repeat;
 }
 
 /* ===== Projects ===== */
